@@ -1,0 +1,44 @@
+Arguments: 
+  /Users/nakz/.nvm/versions/node/v15.14.0/bin/node /Users/nakz/.nvm/versions/node/v15.14.0/bin/yarn add -D ts-node ts-node-dev jest
+
+PATH: 
+  /Users/nakz/google-cloud-sdk/bin:/usr/local/opt/openjdk/bin:/usr/local/Cellar/pyenv-virtualenv/1.1.5/shims:/Users/nakz/.pyenv/shims:/Users/nakz/.pyenv/bin:/Users/nakz/.nvm/versions/node/v15.14.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/nakz/Library/Application Support/cloud-code/installer/google-cloud-sdk/bin:/Users/nakz/google-cloud-sdk/bin:/usr/local/opt/openjdk/bin:/usr/local/Cellar/pyenv-virtualenv/1.1.5/shims:/Users/nakz/.pyenv/shims:/Users/nakz/.pyenv/bin:/Users/nakz/.nvm/versions/node/v15.14.0/bin:/usr/local/Cellar/postgresql@10/10.16_1/bin/:/usr/local/Cellar/postgresql@10/10.16_1/bin/
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  15.14.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/nakz/typress/package.json: Unexpected token } in JSON at position 317
+      at JSON.parse (<anonymous>)
+      at /Users/nakz/.nvm/versions/node/v15.14.0/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/nakz/.nvm/versions/node/v15.14.0/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/nakz/.nvm/versions/node/v15.14.0/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "typress",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "NakZMichael <nakazato.muka@gmail.com>",
+    "license": "MIT",
+  
+    "scripts": {
+      "build": "tsc",
+      "start": "ts-node ./src/index.ts",
+      "dev": "ts-node-dev --respawn --files src/index.ts",
+      "test": "jest --coverage --verbose"
+    },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
